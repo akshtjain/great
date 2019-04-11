@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is Great!</title>
+	<style>
+		.top {
+                width: 80%;
+                
+            }
+        .bottom{
+        	width: 50%;
+        }
+		#cf {
+		  position:relative;
+		  height:281px;
+		  width:450px;
+		  margin:0 auto;
+		}
+
+		#cf img {
+		  position:absolute;
+		  left:0;
+		  -webkit-transition: opacity 1s ease-in-out;
+		  -moz-transition: opacity 1s ease-in-out;
+		  -o-transition: opacity 1s ease-in-out;
+		  transition: opacity 1s ease-in-out;
+		}
+
+		@keyframes cfFadeInOut {
+			0% {
+			  opacity:1;
+			}
+			45% {
+			opacity:1;
+			}
+			55% {
+			opacity:0;
+			}
+			100% {
+			opacity:0;
+			}
+		}
+
+		#cf img.top {
+		animation-name: cfFadeInOut;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 1s;
+		animation-direction: alternate;
+		}
+		}
+
+	</style>
+</head>
+<body>
+	<audio autoplay>
+	  <source src="catm.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<div id="cf">
+	  <img class="bottom" src="catimage.jpg"  />
+	  <img class="top" src="Apoo.jpg" />
+	</div>
+
+</body>
+</html>
